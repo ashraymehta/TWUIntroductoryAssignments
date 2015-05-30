@@ -24,4 +24,11 @@ public class PrimeFactors {
         }
         return true;
     }
+
+    public static void printPrimeFactors(int n) {
+        List<Integer> factors = PrimeFactors.generate(n);
+        for(Integer fact : factors) {
+            System.out.println(fact);
+        }
+    }
 }
